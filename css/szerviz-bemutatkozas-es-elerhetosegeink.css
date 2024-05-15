@@ -1,0 +1,396 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: clamp(.85rem, .85vw, .85vw);
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    word-wrap: break-word;
+}
+html {
+    overflow-x: hidden;
+}
+body {
+    background-color: black;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-block: 2rem;
+}
+
+.container {
+    width: 65vw;
+    height: fit-content;
+    background-color: white;
+    border-radius: .5em;
+    padding: .5rem;
+
+}
+/* Fejléc képe és a szövege*/
+.header {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: clamp(1rem, 1vw, 1vw);
+        position: relative;
+}
+.header-img {
+    width: 100%;
+    height: 100%;
+}
+.header-box {
+    background-image: url('../img/headerboxbg.gif');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    text-align: center;
+    gap: clamp(1.25rem, 1.25vw, 1.25vw);
+    padding: clamp(1rem, 1vw, 1vw);
+    border-radius: .5em;
+}
+
+.header-title {
+    font-size: clamp(1.9rem, 1.25vw,1.25vw);
+    font-weight: normal;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+.header-text {
+    font-size: clamp(.75rem, .75vw, .75vw);
+}
+
+
+.main {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    margin-top: 1rem;
+    column-gap: 1rem;
+}
+/* Bal oldali menüsor */
+.left-sidebar {
+    background-color: #e77300;
+    display: flex;
+    height: fit-content;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: clamp(1.25rem, 1.25vw, 1.25vw);
+    border-radius: .5em;
+    transition: all 300ms ease-in-out;
+    width: fit-content;
+    padding: clamp(1.25rem, 1.25vw, 1.25vw);
+}
+
+.left-sidebar-title {
+    font-size: clamp(1rem, 1vw, 1vw);
+    border-bottom: 1px solid black;
+}
+.left-sidebar ul {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(.5rem, .5vw, .5vw);
+}
+.left-sidebar li {
+    list-style-type: disc;
+    padding-block: .2rem;
+
+}
+.left-sidebar a{
+    text-decoration: none;
+    color: black;
+    font-size: clamp(.9rem, .6vw, .6vw);
+}
+
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-right: 10rem;
+    gap: 2rem;
+    font-family: andale mono, times;
+}
+.content-paragraph {
+    text-align: center;
+    font-weight: bold;
+}
+.content-javitas-img {
+    width: clamp(15rem, 30vw, 30vw);
+}
+.content-mosogep {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.content-mosogep-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-weight: bold;
+   
+}
+.content-mosogep-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content-mosogep-img img {
+    width: 60%;
+}
+.content-mosogep-text p {
+    font-size: clamp(.8rem, .8vw, .8vw);
+}
+.content-title {
+    font-size: clamp(1.25rem, 1.25vw, 1.25vw);
+    font-weight: bold;
+}
+
+.bold {
+    font-weight: bold;
+}
+.center {
+    text-align: center;
+}
+.content-paragraph-red {
+    color: red;
+}
+
+.electrojavker-img {
+    margin: auto;
+    width: 50%;
+}
+
+.size08 {
+    font-size: clamp(.8rem, .8vw, .8vw);
+}
+.size06 {
+    font-size: clamp(.6rem, .6vw, .6vw);
+}
+
+.size1 {
+    font-size: clamp(1.2rem, 1.2vw, 1.2vw);
+    font-family: andale mono, times;
+}
+
+.content-contact {
+    
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.content-contact li {
+    font-family: andale mono, times;
+    font-size: clamp(1.5rem, 1.5vw, 1.5vw);
+    text-align: center;
+    list-style-type: none;
+    
+}
+
+.facebook {
+    border-bottom: 2px black dashed;
+    padding-bottom: 2rem;
+    width: 100%;
+    text-align: center;
+    font-size: clamp(1rem, 1vw, 1vw);
+}
+.color-blue {
+    color: blue;
+}
+.email {
+    font-size: clamp(1.5rem, 1.5vw, 1.5vw);
+    font-family: 'Times New Roman', Times, serif;
+    padding-bottom: 1rem;
+    border-bottom: 1px black solid;
+    width: 100%;
+    text-align: center;
+}
+.telepules  {
+    line-height: 1.75rem;
+    border-bottom: 1px black solid;
+    padding-bottom: 1rem;
+    width: 100%;
+}
+.content-villanysuto {
+    border-bottom: 1px black solid;
+    padding-bottom: 1rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-workers-paragraph {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.content-workers-paragraph p {
+    font-size: clamp(.7rem, .7vw, .7vw);
+}
+
+.extrabold-paragraph {
+    font-size: clamp(1rem, 1vw, 1vw);
+}
+
+.szponzorok {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.szponzorok img {
+    width: 30%;
+}
+footer {
+    text-align: center;
+    font-size: clamp(.5rem, .5vw, .5vw);
+    margin-bottom: clamp(1rem ,1vw, 1vw);
+}
+footer * {
+    font-size: clamp(.5rem, .5vw, .5vw);
+}
+.aszf {
+    border-right: 1px solid black;
+    padding-right: .5rem;
+    font-size: clamp(.5rem, .5vw, .5vw);
+}
+
+.szereles-img {
+    width: clamp(15rem, 30vw, 30vw);
+}
+
+
+.hamburger img {
+    width: 25px;
+    height: 25px;
+    background-color: #e77300;
+    padding: .5rem;
+}
+.hamburger {
+    position: absolute;
+    position: fixed;
+    right: 0;
+    display: none;
+}
+
+footer{
+    padding-top: 1rem;
+}
+
+
+
+
+/* Mobilos nézet */
+@media only screen and (max-width: 1000px) {
+     html {
+        overflow-x: hidden;
+    }
+    
+    body {
+        padding: 0;
+    }
+    .container {
+        width: 100vw;
+        margin: 0;
+        padding: 0;
+    }
+    
+    
+    .header {
+        grid-template-columns: 1fr;
+    }
+    .header-img {
+        width: 100%;
+        height: 40vh;
+        border-radius: none;
+    }
+    
+    .left-sidebar {
+        display: block;
+        position: fixed;
+        top: 0;
+        right: -140%;
+        z-index: 10;
+        background-color: #e77300;
+        height: 100vh;
+        overflow-y: auto;
+        width: fit-content;
+    }
+
+    .left-sidebar * {
+        font-size: 2rem;
+        
+    }
+    .left-sidebar ul li {
+        list-style-type: none;
+    
+    }
+    .left-sidebar ul li a {
+        font-size: 1rem;
+    }
+    .left-sidebar ul li a:hover {
+        text-decoration: underline;
+    }
+
+    .header-box {
+        justify-content: center;
+        align-items: flex-start;
+        padding-inline: 5vw;
+        height: fit-content;
+        border-radius: 0;
+        text-align: left;
+        
+    }
+    .header-text {
+        font-size: clamp(1rem, 1vw, 1vw);
+    }
+
+    .header-title {
+        font-size: clamp(1.5rem, 1.5vw, 1.5vw);
+    }
+
+    .main {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        width: fit-content;
+        padding-inline: 10vw;
+    }
+
+    .content-javitas-img, .szereles-img {
+        width: 100%;
+    }
+
+    .hamburger {
+        display: block;
+        position: fixed;
+        margin: 1rem;
+        z-index: 100;
+        cursor: pointer;
+    }
+
+    .shown {
+        right: 0;
+        padding-inline: 2rem;
+        width: fit-content;
+        height: 100vh;
+        transition: all 300ms ease-in-out;
+        z-index: 15;
+        
+    }
+    .animation {
+        transition: all 300ms ease-in-out;
+    }
+    .blur {
+        filter: blur(5px);
+    }
+}

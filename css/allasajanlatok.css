@@ -1,0 +1,56 @@
+.content{
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+
+.content-title{
+    font-size: clamp(1.25rem, 1.25vw, 1.25vw);
+    font-weight: bold;
+    text-transform: uppercase;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: start;  
+}
+
+
+
+.content-subtitle{
+    font-size: larger;
+}
+
+.content-mosogep-img{
+    width: auto;
+    height: 250px;
+}
+
+.content-side {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.content-p{
+    margin-bottom: .9rem;
+}
+
+.content-link{
+    color: #0000ff;
+    font-size: medium;
+    text-align: center; 
+}
+
+.content-small-size{
+    font-size: xx-small;
+}
+
+.felsorolt-list {
+    padding-left: 7rem;
+    list-style: none;
+  }
+
+
+
+
+
